@@ -5,17 +5,19 @@ export default class RouletteGun extends React.Component{
     static defaultProps = {
         bulletInChamber: 8
       };
-    
-    
-    state = {
+    constructor(){ 
+        super()
+        this.state = {
 
-            chamber: null,
-            spinningTheChamber: false  
+        chamber: null,
+        spinningTheChamber: false  
 
-        }
-    }
-
+    }}
     
+   
+    
+
+
 renderBang(){
 return (
 "bang")
@@ -23,9 +25,9 @@ return (
 
 
 spin(){
-if( chamber )
-
-}
+    return (
+        "spinning")
+        }
 
 
 
@@ -34,7 +36,7 @@ return (
 
     <div>
 <p>{this.renderBang()}</p>
-<button onlcick = {() => spin()}>PULL THE TRIGGER</button>
+<button onlcick = {() => this.spin()}>PULL THE TRIGGER</button>
 
     </div>
 )
