@@ -1,7 +1,7 @@
 import React from "react";
 
 class Tabs extends React.Component {
-static defaultProps = { tabs: [] };
+    static defaultProps = { tabs: [] };
   render() {const buttons = this.props.tabs.map((tab, index) => (
    
    
