@@ -12,6 +12,7 @@ const tabsProp = [
 ];
 
 class App extends React.Component {
+  
   render() {
     return <div>
       <Tabs tabs={tabsProp} />
